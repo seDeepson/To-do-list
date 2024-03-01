@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    background-color: #262a2f;
+    /* background: linear-gradient(135deg, #ff00c3, #00ffff); */
+    background: linear-gradient(135deg, #153677, #4e0854);
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    box-shadow: 35px 35px 0px rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, #00ffff, #ff00c3);
+    /* background-image: linear-gradient(#33ccff 0%, #ff99cc 100%); */
+    /* background: linear-gradient(135deg, #153677, #4e0854); */
+}
+
+h3{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 24px;
+    border-bottom: 4px solid #262a2f;
+    padding-bottom: 8px;
+    width: 152px;
+}
+.upper-part {
+    margin-top: 10px;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+#task {
+    width: 250px;
+    padding: 8px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: hsl(285, 69%, 47%);
+}
+
+.addBtn {
+    width: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(285, 69%, 47%);
+    cursor: pointer;
+    color: white;
+}
+
+.addBtn:active {
+    opacity: 0.4;
+}
+
+.deleteBtn, .compTask {
+    width: 120px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(285, 69%, 47%);
+    cursor: pointer;
+    color: white;
+}
+
+.deleteBtn:active {
+    opacity: 0.4;
+}
+
+.compTask{
+    width: 250px;
+}
+
+.compTask:active{
+    opacity: 0.4;
+}
+
+.body{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+
+li {
+    list-style-type: none;
+    color: white;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+    background: #FF0000;
+    padding: 12px;
+    border-radius: 4px;
+    width: 380px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: margin-bottom 0.45s;
+    transition: box-shadow 0.40s;
+}
+
+li:hover {
+    box-shadow: 30px 30px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.40s;
+    transition: box-shadow 0.40s;
+    opacity: 0.8;
+}
+
+li:not(:first-child):hover {
+    margin-top: 20px;
+}
+

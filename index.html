@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List 📑</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h3>To Do List 📑</h3>
+
+        <div class="upper-part">
+
+            <input type="text" id="task" placeholder="Enter the task">
+
+            <button onclick="displayTask()" class="addBtn">+</button>
+
+            <button class="compTask" onclick="deleteCompletedTask()">Delete completed Task</button>
+
+            <button class="deleteBtn" onclick="deleteAll()">Delete All</button>
+        </div>
+
+        <div class="body">
+
+            <ul id="list" onclick="completedTask(event)"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
